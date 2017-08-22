@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25dp"
+    android:minHeight="25dp"
+    android:background="#fa5755">
+    <TextView
+        android:id="@+id/Login"
+        android:layout_height="32dp"
+        android:layout_width="match_parent"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp"
+        android:background="#fa5755"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/pincodeText"
+        android:layout_below="@+id/Login"
+        android:layout_height="75dp"
+        android:scrollbars="vertical"
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:text="Pincode:"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:typeface="sans" />
+    <ImageView
+        android:id="@+id/imgHappy"
+        android:src="@drawable/face_smile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="275dp"
+        android:paddingTop="125dp" />
+    <ImageView
+        android:id="@+id/imgSad"
+        android:src="@drawable/face_sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingTop="125dp" />
+    <SeekBar
+        android:id="@+id/happinessSlider"
+        android:layout_below="@+id/pincodeText"
+        android:layout_height="28dp"
+        android:layout_width="250dp"
+        android:height="28dp"
+        android:minWidth="300dp"
+        android:foregroundGravity="center"
+        android:max="10"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="7dp"
+        android:paddingTop="1dp"
+        android:textSize="14dp"
+        android:paddingBottom="1dp"
+        android:typeface="sans"
+        android:layout_marginRight="20dp" />
+    <LinearLayout
+        android:id="@+id/linearLayoutBtns"
+        android:layout_below="@+id/happinessSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+        <Button
+            android:id="@+id/btnNeutral"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:textSize="14dp"
+            android:text="Oké"
+            android:typeface="sans"
+            android:background="#ffffffff"
+            android:textColor="#3c3c3c"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</RelativeLayout>
